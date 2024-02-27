@@ -7,3 +7,4 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 sudo systemctl start docker
 sudo usermod -aG docker centos
 logout and login now u are able to use docker centos user 
+for i in mongodb catalogue web user shipping payment mysql cart ; do cd $i ; docker build -t $i:v1 .;cd ..;done
